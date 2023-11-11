@@ -209,31 +209,41 @@ video {
     box-shadow: 0px 0px 50px 0px #9353FF;
 }
 
-@media screen and (orientation: portrait) {
 
-    /* Вертикальная ориентация (мобильные устройства) */
+
+
+@media only screen and (max-width: 390px) {
     video.horizontal-video {
         display: none;
     }
 }
 
-@media screen and (orientation: landscape) {
-
-    /* Горизонтальная ориентация (другие устройства) */
-    video.vertical-video {
+@media only screen and (min-width: 390px) {
+    video.horizontal-video {
         display: none;
     }
 }
 
+@media only screen and (min-width: 600px) {
+    video.horizontal-video {
+        display:flex;
+    }
+}
 
-@media only screen and (max-width: 390px) {}
+@media only screen and (min-width: 768px) {
+     video.vertical-video {
+        display: none;
+    }
+}
 
-@media only screen and (min-width: 390px) {}
+@media only screen and (min-width: 992px) {
+     video.vertical-video {
+        display: none;
+    }
+}
 
-@media only screen and (min-width: 600px) {}
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 992px) {}
-
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+     video.vertical-video {
+        display: none;
+    }
+}
