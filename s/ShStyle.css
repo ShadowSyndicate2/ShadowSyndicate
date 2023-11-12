@@ -205,6 +205,14 @@ video {
 
 
 @media  screen and (max-width: 390px) {
+    video.horizontal-video {
+        display: none;
+    }
+    
+     video.vertical-video {
+        display: block;
+    }
+
     .main-block {
         display: block;
         margin: 100px 20px;
@@ -265,8 +273,8 @@ video {
 
     .vid {
         display: flex;
-        width: 465px;
-        height: 465px;
+        width: 369px;
+        height: 369px;
         
     }
 
