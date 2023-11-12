@@ -72,8 +72,6 @@ video {
 
 .vid {
     display: flex;
-    width: 438px;
-    height: 438px;
     margin-left: auto;
     margin-right: auto;
 }
