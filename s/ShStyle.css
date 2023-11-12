@@ -208,6 +208,20 @@ video {
     .main-block {
         display: block;
         margin: 100px 20px;
+        text-align: center;
+    }
+
+
+    .vid {
+        display: flex;
+        width: 350px;
+        height: 350px;
+       
+    }
+
+
+    .right-block-container {
+        font-size: 16px;
     }
 }
 
@@ -229,8 +243,8 @@ video {
 
     .vid {
         display: flex;
-        width: 438px;
-        height: 438px;
+        width: 350px;
+        height: 350px;
        
     }
 
